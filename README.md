@@ -6,7 +6,7 @@ Normalizaciq.css - CSS файл, задаващ стилови таблици н
 браузъри с цел прецизно да се засегнат само стиловете, които имат нужда да бъдат
 "нормализирани".
 
-[Виж демонстрацията](http://deianvasilev.github.com/normalizaciq.css/1.0.0/test.html)
+[Виж демонстрацията](http://deianvasilev.github.com/normalizaciq.css/2.0.0/test.html)
 
 ## Какво правим фактически?
 
@@ -27,11 +27,11 @@ Normalizaciq.css е предназначен да бъде използван к
 ## Подръжка на браузъри
 
 * Google Chrome
-* Mozilla Firefox 3+
-* Apple Safari 4+
-* Opera 10+
-* Internet Explorer 6+
+* Mozilla Firefox 4+
+* Apple Safari 5+
+* Opera 12+
+* Internet Explorer 8+
 
 ## Благодарности
 
-Normalizaciq.css е проект на [Deian Vasilev - Imprimatur Studio, Varna](http://github.com/deianvasilev).
+Normalizaciq.css е проект на [Deian Vasilev - Imprimatur Studio, Varna](http://imprimatur.bg/).
