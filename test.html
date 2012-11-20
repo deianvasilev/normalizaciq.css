@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Normalizaciq CSS</title>
+    <link rel="stylesheet" href="normalizaciq.css">
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <style>
+        #boxsize button,
+        #boxsize input,
+        #boxsize select,
+        #boxsize textarea {
+            width: 200px;
+            padding: 5px;
+            border: 1px solid #333;
+        }
+    </style>
+</head>
+<body>
+<h1>Заглавие 1</h1>
+<h2>Заглавие 2</h2>
+<h3>Заглавие 3</h3>
+<h4>Заглавие 4</h4>
+<h5>Заглавие 5</h5>
+<h6>Заглавие 6</h6>
+
+<section>
+    <h1>Заглавие 1 (в елемент section)</h1>
+    <h2>Заглавие 2 (в елемент section)</h2>
+    <h3>Заглавие 3 (в елемент section)</h3>
+    <h4>Заглавие 4 (в елемент section)</h4>
+    <h5>Заглавие 5 (в елемент section)</h5>
+    <h6>Заглавие 6 (в елемент section)</h6>
+</section>
+
+<article>
+    <h1>Заглавие 1 (в елемент article)</h1>
+    <h2>Заглавие 2 (в елемент article)</h2>
+    <h3>Заглавие 3 (в елемент article)</h3>
+    <h4>Заглавие 4 (в елемент article)</h4>
+    <h5>Заглавие 5 (в елемент article)</h5>
+    <h6>Заглавие 6 (в елемент article)</h6>
+</article>
+
+<header>
+    <hgroup>
+        <h1>Заглавие 1 (в елемент hgroup)</h1>
+        <h2>Заглавие 2 (в елемент hgroup)</h2>
+    </hgroup>
+    <nav>
+        <ul>
+            <li><a href="#">навигационна точка #1</a></li>
+            <li><a href="#">навигационна точка #2</a></li>
+            <li><a href="#">навигационна точка #3</a></li>
+        </ul>
+    </nav>
+</header>
+
+<h1>Семантика на ниво текст</h1>
+
+<p hidden>Този параграф би следвало да е скрит във всички браузъри, с изключение на IE6</p>
+
+<p>Дестилерията <em>Glenfiddich</em> е място пълно с чар. Голяма част от оригиналната структура на гранитната сградата, в медни и сиви цветове стои прекрасно на фона на зелените хълмове. Новите части са построени в същия стил и прелест.</p>
+<p><em>Glenfiddich </em>е единствената дестилерия на шотландско уиски, която използва един източник на натурална изворна вода. За нейните изключителните уискита се използва вода от извора «Роби Дю» (<em>Robbie Dhu Spring</em>). Собствениците са изкупили около 4 800 декара около хълмове Конвал, обграждащи дестилерията, където за да защитят чистотата на водните запаси не се допуска пашата на овце и говеда. Водата влиза директно в дестилерията. Това е единствената серия уискита, при които водата се използва, както за производствения процес така и за гасенето на готовите за бутилиране уискита.</p>
+
+<address>Адрес: Варна, България</address>
+
+<p>
+    Пример за <a href="#">a елемент</a><br>
+    Примери за <abbr>abbr елемент</abbr> и <abbr title="Title текст">abbr елемент с title</abbr><br>
+    Пример за <b>b елемент</b><br>
+    Пример за <cite>cite елемент</cite><br>
+    Пример за <code>code елемент</code><br>
+    Пример за <del>del елемент</del><br>
+    Примери за <dfn>dfn елемент</dfn> и <dfn title="Title текст">dfn елемент с title</dfn><br>
+    Пример за <em>em елемент</em><br>
+    Пример за <i>i елемент</i><br>
+    img елемент <img src="http://lorempixel.com/16/16" alt=""><br>
+    Пример за <ins>ins елемент</ins><br>
+    Пример за <kbd>kbd елемент</kbd><br>
+    Пример за <mark>mark елемент</mark><br>
+    Пример за <q>q елемент <q>вътре</q> в q елемент</q><br>
+    Пример за <s>s елемент</s><br>
+    Пример за <samp>samp елемент</samp><br>
+    Пример за <small>small елемент</small><br>
+    Пример за <span>span елемент</span><br>
+    Пример за <strong>strong елемент</strong><br>
+    Пример за <sub>sub елемент</sub><br>
+    Пример за <sup>sup елемент</sup><br>
+    Пример за <u>u елемент</u><br>
+    Пример за <var>var елемент</var>
+</p>
+
+<h1>Вмъкнато съдържание</h1>
+
+<h3>audio</h3>
+
+<audio controls></audio>
+<audio></audio>
+
+<h3>img</h3>
+
+<img src="http://lorempixel.com/100/100" alt="">
+<a href="#"><img src="http://lorempixel.com/100/100" alt=""></a>
+
+<h3>svg</h3>
+
+<svg width="100px" height="100px">
+    <circle cx="100" cy="100" r="100" fill="#ff0000" />
+</svg>
+
+<h3>video</h3>
+
+<video controls></video>
+<video></video>
+
+<h1>Интерактивно съдържание</h1>
+
+<h3>details / summary</h3>
+<details>
+    <summary>Още информация</summary>
+    <p>Допълнителна информация</p>
+    <ul>
+        <li>Точка 1</li>
+        <li>Точка 2</li>
+    </ul>
+</details>
+
+<h1>Групиращо съдържание</h1>
+
+<p>Дестилерията Glenfiddich е място пълно с чар. Голяма част от оригиналната структура на гранитната сградата, в медни и сиви цветове стои прекрасно на фона на зелените хълмове. Новите части са построени в същия стил и прелест.</p>
+
+<h3>pre</h3>
+
+<pre>Дестилерията Glenfiddich е място пълно с чар. Голяма част от оригиналната структура на гранитната сградата, в медни и сиви цветове стои прекрасно на фона на зелените хълмове. Новите части са построени в същия стил и прелест.</pre>
+
+        <pre><code>&lt;html>
+            &lt;head>
+            &lt;/head>
+            &lt;body>
+            &lt;div class="main"> &lt;div>
+            &lt;/body>
+            &lt;/html></code></pre>
+
+<h3>blockquote</h3>
+
+<blockquote>
+    <p>Пример за често използван код с &lt;blockquote> и дъщерен &lt;p> елемент.</p>
+</blockquote>
+
+<blockquote>По-добър философски код маркиран само с &lt;blockquote> елемент.</blockquote>
+
+<h3>Подреден списък</h3>
+
+<ol>
+    <li>списъчна точка 1</li>
+    <li>списъчна точка 1
+        <ol>
+            <li>списъчна точка 2</li>
+            <li>списъчна точка 2
+                <ol>
+                    <li>списъчна точка 3</li>
+                    <li>списъчна точка 3</li>
+                </ol>
+            </li>
+            <li>списъчна точка 2</li>
+            <li>списъчна точка 2</li>
+        </ol>
+    </li>
+    <li>списъчна точка 1</li>
+    <li>списъчна точка 1</li>
+</ol>
+
+<h3>Неподреден списък</h3>
+
+<ul>
+    <li>списъчна точка 1</li>
+    <li>списъчна точка 1
+        <ul>
+            <li>списъчна точка 2</li>
+            <li>списъчна точка 2
+                <ul>
+                    <li>списъчна точка 3</li>
+                    <li>списъчна точка 3</li>
+                </ul>
+            </li>
+            <li>списъчна точка 2</li>
+            <li>списъчна точка 2</li>
+        </ul>
+    </li>
+    <li>списъчна точка 1</li>
+    <li>списъчна точка 1</li>
+</ul>
+
+<h3>Описателен списък</h3>
+
+<dl>
+    <dt>Описание име</dt>
+    <dd>Описание стойност</dd>
+    <dt>Описание име</dt>
+    <dd>Описание стойност</dd>
+    <dd>Описание стойност</dd>
+    <dt>Описание име</dt>
+    <dt>Описание име</dt>
+    <dd>Описание стойност</dd>
+</dl>
+
+<h3>figure елемент</h3>
+
+<figure>
+    <img src="http://lorempixel.com/400/200" alt="">
+    <figcaption>Figcaption съдържание</figcaption>
+</figure>
+
+<h1>Таблични данни</h1>
+
+<table>
+    <caption>Имприматур - албуми</caption>
+    <thead>
+    <tr>
+        <th>Албум</th>
+        <th>година</th>
+        <th>Цена</th>
+    </tr>
+    </thead>
+    <tfoot>
+    <tr>
+        <th>Албум</th>
+        <th>година</th>
+        <th>Цена</th>
+    </tr>
+    </tfoot>
+    <tbody>
+    <tr>
+        <td>Родопи</td>
+        <td>2001</td>
+        <td>15 лв.</td>
+    </tr>
+    <tr>
+        <td>Варна</td>
+        <td>2006</td>
+        <td>15 лв.</td>
+    </tr>
+    <tr>
+        <td>Братислава</td>
+        <td>2012</td>
+        <td>15 лв.</td>
+    </tr>
+    <tr>
+        <td>Прага</td>
+        <td>1996</td>
+        <td>15 лв.</td>
+    </tr>
+    </tbody>
+</table>
+
+<h1>Формуляри</h1>
+
+<form>
+    <fieldset>
+        <legend>Input елементи като наследници на label елементи (form legend). Този добавен текст просто набира текст за дълго legend описание, което може да тества word wrapping.</legend>
+        <p><label>Text input <input type="text" value="стойност по подразбиране която продължава без прекъсване или пунктуация"></label></p>
+        <p><label>Email input <input type="email"></label></p>
+        <p><label>Search input <input type="search"></label></p>
+        <p><label>Tel input <input type="tel"></label></p>
+        <p><label>URL input <input type="url" placeholder="http://"></label></p>
+        <p><label>Password input <input type="password" value="password"></label></p>
+        <p><label>File input <input type="file"></label></p>
+
+        <p><label>Radio input <input type="radio" name="rad"></label></p>
+        <p><label>Checkbox input <input type="checkbox"></label></p>
+        <p><label><input type="radio" name="rad"> Radio input</label></p>
+        <p><label><input type="checkbox"> Checkbox input</label></p>
+
+        <p><label>Select field <select><option>Option 01</option><option>Option 02</option></select></label></p>
+        <p><label>Textarea <textarea cols="30" rows="5" >Textarea text</textarea></label></p>
+    </fieldset>
+
+    <fieldset>
+        <legend>Input елемнти като "братовчеди" на label елементи</legend>
+        <p><label for="ic">Color input</label> <input type="color" id="ic" value="#000000"></p>
+        <p><label for="in">Number input</label> <input type="number" id="in" min="0" max="10" value="5"></p>
+        <p><label for="ir">Range input</label> <input type="range" id="ir" value="10"></p>
+        <p><label for="idd">Date input</label> <input type="date" id="idd" value="1970-01-01"></p>
+        <p><label for="idm">Month input</label> <input type="month" id="idm" value="1970-01"></p>
+        <p><label for="idw">Week input</label> <input type="week" id="idw" value="1970-W01"></p>
+        <p><label for="idt">Datetime input</label> <input type="datetime" id="idt" value="1970-01-01T00:00:00Z"></p>
+        <p><label for="idtl">Datetime-local input</label> <input type="datetime-local" id="idtl" value="1970-01-01T00:00"></p>
+
+        <p><label for="irb">Radio input</label> <input type="radio" id="irb" name="rad"></p>
+        <p><label for="icb">Checkbox input</label> <input type="checkbox" id="icb"></p>
+        <p><input type="radio" id="irb2" name="rad"> <label for="irb2">Radio input</label></p>
+        <p><input type="checkbox" id="icb2"> <label for="icb2">Checkbox input</label></p>
+
+        <p><label for="s">Select field</label> <select id="s"><option>Option 01</option><option>Option 02</option></select></p>
+        <p><label for="t">Textarea</label> <textarea id="t" cols="30" rows="5" >Textarea text</textarea></p>
+    </fieldset>
+
+    <fieldset>
+        <legend>Кликаеми input и button елементи</legend>
+        <p><input type="image" src="http://lorempixel.com/90/24" alt="Image (input)"></p>
+        <p><input type="reset" value="Reset (input)"></p>
+        <p><input type="button" value="Button (input)"></p>
+        <p><input type="submit" value="Submit (input)"></p>
+        <p><input type="submit" value="Disabled (input)" disabled></p>
+
+
+        <p><button type="reset">Reset (button)</button></p>
+        <p><button type="button">Button (button)</button></p>
+        <p><button type="submit">Submit (button)</button></p>
+        <p><button type="submit" disabled>Disabled (button)</button></p>
+    </fieldset>
+
+    <fieldset id="boxsize">
+        <legend>box-size тестове</legend>
+        <div><input type="text" value="text"></div>
+        <div><input type="email" value="email"></div>
+        <div><input type="search" value="search"></div>
+        <div><input type="url" value="http://example.com"></div>
+        <div><input type="password" value="password"></div>
+
+        <div><input type="color" value="#000000"></div>
+        <div><input type="number" value="5"></div>
+        <div><input type="range" value="10"></div>
+        <div><input type="date" value="1970-01-01"></div>
+        <div><input type="month" value="1970-01"></div>
+        <div><input type="week" value="1970-W01"></div>
+        <div><input type="datetime" value="1970-01-01T00:00:00Z"></div>
+        <div><input type="datetime-local" value="1970-01-01T00:00"></div>
+
+        <div><input type="radio"></div>
+        <div><input type="checkbox"></div>
+
+        <div><select><option>Option 01</option><option>Option 02</option></select></div>
+        <div><textarea cols="30" rows="5">Textarea text</textarea></div>
+
+        <div><input type="image" src="http://lorempixel.com/90/24" alt="Image (input)"></div>
+        <div><input type="reset" value="Reset (input)"></div>
+        <div><input type="button" value="Button (input)"></div>
+        <div><input type="submit" value="Submit (input)"></div>
+
+        <div><button type="reset">Reset (button)</button></div>
+        <div><button type="button">Button (button)</button></div>
+        <div><button type="submit">Submit (button)</button></div>
+    </fieldset>
+</form>
+
+</body>
+</html>
