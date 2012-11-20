@@ -35,3 +35,6 @@ Normalizaciq.css е предназначен да бъде използван к
 ## Благодарности
 
 Normalizaciq.css е проект на [Deian Vasilev - Imprimatur Studio, Varna](http://imprimatur.bg/).
+
+Проектът е вдъхновен от Nicolas Gallagher (https://github.com/necolas/normalize.css) като е преведен и
+ще се развива изцяло самостоятелно за нуждите на студиото
