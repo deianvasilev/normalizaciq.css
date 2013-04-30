@@ -14,7 +14,6 @@ figcaption,
 figure,
 footer,
 header,
-hgroup,
 nav,
 section,
 summary {
@@ -54,16 +53,22 @@ audio:not([controls]) {
 
 /*================================================================ 2. Базови */
 /*
- * 1. Установява шрифта по подразбиране да е sans-serif.
+ * 1. Предотвратява използването на цвят за фон зададен в ситемната цветова
+ *    схема при Firefox, IE и Opera.
+ * 2. Предотвратява използването на цвят за текст зададен в ситемната цветова
+ *    схема при Firefox, IE и Opera.
+ * 3. Установява шрифта по подразбиране да е sans-serif.
  * 2. Предотвратява преоразмеряване на текста в iOS след
  *    промяна на ориентацията на устройството, без да
  *    блокира потребителският zoom.
  */
 
 html {
-    font-family: sans-serif; /* 1 */
-    -webkit-text-size-adjust: 100%; /* 2 */
-    -ms-text-size-adjust: 100%; /* 2 */
+    background: #fff; /* 1 */
+    color: #000; /* 2 */
+    font-family: sans-serif; /* 3 */
+    -ms-text-size-adjust: 100%; /* 4 */
+    -webkit-text-size-adjust: 100%; /* 4 */
 }
 
 /*
@@ -96,13 +101,14 @@ a:hover {
 
 /* .............................................................. 2.2 Типография */
 /*
- * Адресира размера на шрифта при `h1` елемент
+ * Адресира размера и отстоянията на шрифта при `h1` елемент
  * вътре в `section` и `article` елементи във
  * Firefox 4+, Safari 5, и Chrome.
  */
 
 h1 {
     font-size: 2em;
+    margin: 0.67em 0;
 }
 
 /*
@@ -131,6 +137,16 @@ strong {
 
 dfn {
     font-style: italic;
+}
+
+/**
+ * Адресира различията между Firefox и останалите браузъри.
+ */
+
+hr {
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    height: 0;
 }
 
 /*
@@ -162,9 +178,7 @@ samp {
  */
 
 pre {
-    white-space: pre;
     white-space: pre-wrap;
-    word-wrap: break-word;
 }
 
 /*
@@ -245,7 +259,7 @@ figure {
 
 /* .............................................................. 2.5 Формуляри */
 /*
- * Дефинира последователност в ренда на border, margin, и padding.
+ * Дефинира последователност при рендването на border, margin, и padding.
  */
 
 fieldset {
